@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="GPA.js" defer></script>
+</head>
+
+<body>
+
+<div class="page-box">
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo-box">
+            <img src="images/logo.png">
+        </div>
+        <h1>Computer Science Department</h1>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="description.html">Program Description</a>
+        <a href="TA.html">TA Application</a>
+        <a class="active" href="GPA.html">GPA Calculator</a>
+    </nav>
+
+    <div class="nav-grey-line"></div>
+
+    <!-- GPA BOX -->
+    <div style="padding: 30px 0; display: flex; justify-content: center;">
+
+        <div style="
+            width: 900px;
+    background: #e6e6e6;
+    border-top: 2px solid #bdbdbd;
+    border-bottom: 2px solid #bdbdbd;
+    border-left: 2px solid #ed9458;
+    border-right: 2px solid #ed9458;
+    padding: 20px 35px;
+    text-align: center;
+    font-weight: 700;
+           
+
+        ">
+
+            <h2 style="margin-top: 0;">Find your GPA!</h2>
+
+            <p style="margin-top: -10px;">
+                Enter the number of credit hours for each course, and the letter grade for each of them.
+                At least 2 courses should be entered.
+            </p>
+
+            <h3>Credit Hours &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Grade</h3>
+
+            <table style="margin: 0 auto; text-align: left;">
+                <tr>
+                    <td>Course 1:</td>
+                    <td><input id="ch1" type="text" style="width: 70px; margin-left: 30px;"></td>
+                    <td><input id="gr1" type="text" style="width: 70px; margin-left: 60px;"></td>
+                </tr>
+
+                <tr><td colspan="3" style="height: 12px;"></td></tr>
+
+                <tr>
+                    <td>Course 2:</td>
+                    <td><input id="ch2" type="text" style="width: 70px; margin-left: 30px;"></td>
+                    <td><input id="gr2" type="text" style="width: 70px; margin-left: 60px;"></td>
+                </tr>
+
+                <tr><td colspan="3" style="height: 12px;"></td></tr>
+
+                <tr>
+                    <td>Course 3:</td>
+                    <td><input id="ch3" type="text" style="width: 70px; margin-left: 30px;"></td>
+                    <td><input id="gr3" type="text" style="width: 70px; margin-left: 60px;"></td>
+                </tr>
+
+                <tr><td colspan="3" style="height: 12px;"></td></tr>
+
+                <tr>
+                    <td>Course 4:</td>
+                    <td><input id="ch4" type="text" style="width: 70px; margin-left: 30px;"></td>
+                    <td><input id="gr4" type="text" style="width: 70px; margin-left: 60px;"></td>
+                </tr>
+
+                <tr><td colspan="3" style="height: 12px;"></td></tr>
+
+                <tr>
+                    <td>Course 5:</td>
+                    <td><input id="ch5" type="text" style="width: 70px; margin-left: 30px;"></td>
+                    <td><input id="gr5" type="text" style="width: 70px; margin-left: 60px;"></td>
+                </tr>
+
+                <tr><td colspan="3" style="height: 20px;"></td></tr>
+
+                <tr>
+                    <td>Avg GPA:</td>
+                    <td><input id="result" type="text" readonly style="width: 70px; margin-left: 30px; background:#c1c1c1;"></td>
+                </tr>
+            </table>
+
+            <br><br>
+
+            <button onclick="calculateGPA()" style="padding: 6px 15px;">submit</button>
+            <button onclick="resetGPA()" style="padding: 6px 15px; margin-left: 25px;">Reset</button>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-left">
+            7400 East Drive <br>
+            Montgomery, AL 36117 <br>
+            Local: 334-244-3000 <br>
+            Toll-Free: 800-227-2649
+        </div>
+
+        <div class="footer-center">
+            © 2025 Sravya Reddy Yendapelli
+        </div>
+
+        <div class="footer-right">
+            <img src="images/twt.jpeg" class="icon">
+            <img src="images/pinterest-logo.png" class="icon">
+            <img src="images/facebook-social-network-logo.png" class="icon">
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>

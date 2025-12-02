@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TA Application Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="page-box">
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo-box">
+            <img src="images/logo.png">
+        </div>
+        <h1>Submitted TA Application Data</h1>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="description.html">Program Description</a>
+        <a href="TA.html" >TA Application</a>
+        <a href="GPA.html">GPA Calculator</a>
+    </nav>
+
+    <div class="nav-grey-line"></div>
+
+    <!-- CONTENT -->
+    <div style="padding:40px;">
+
+        <h2>Student Information</h2>
+
+        <p><strong>First Name:</strong> <span id="out_fname"></span></p>
+        <p><strong>Last Name:</strong> <span id="out_lname"></span></p>
+        <p><strong>Student ID:</strong> <span id="out_sid"></span></p>
+        <p><strong>Gender:</strong> <span id="out_gender"></span></p>
+        <p><strong>GPA:</strong> <span id="out_gpa"></span></p>
+        <p><strong>Comments:</strong> <span id="out_comments"></span></p>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-left">
+            7400 East Drive <br>
+            Montgomery, AL 36117 <br>
+            Local: 334-244-3000 <br>
+            Toll-Free: 800-227-2649
+        </div>
+
+        <div class="footer-center">
+            © 2025 Sravya Reddy Yendapelli
+        </div>
+
+        <div class="footer-right">
+            <img src="images/twt.jpeg" class="icon">
+            <img src="images/pinterest-logo.png" class="icon">
+            <img src="images/facebook-social-network-logo.png" class="icon">
+        </div>
+    </footer>
+
+</div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+
+document.getElementById("out_fname").textContent = params.get("fname");
+document.getElementById("out_lname").textContent = params.get("lname");
+document.getElementById("out_sid").textContent = params.get("sid");
+document.getElementById("out_gender").textContent = params.get("gender");
+document.getElementById("out_gpa").textContent = params.get("gpa");
+document.getElementById("out_comments").textContent = params.get("comments");
+</script>
+
+</body>
+</html>
